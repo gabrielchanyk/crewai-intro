@@ -1,1 +1,3 @@
 .env
+/agents_template/__pycache__
+/agents_template/db

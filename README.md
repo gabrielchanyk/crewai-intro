@@ -2,6 +2,7 @@
 
 pip install crewai
 pip install langchain_community
+pip install langchain_openai
 
 create agent, task and crew
 
@@ -11,6 +12,14 @@ platform.openai.com
 
 - get key
 - need to have $2
+
+Download Ollama and phi3
+https://ollama.com/library/phi3
+
+ollama pull phi3:3.8b
+
+pip install crewai[tools]
+pip install python-decouple
 
 Attributes:
 agent_executor: An instance of the CrewAgentExecutor class.
