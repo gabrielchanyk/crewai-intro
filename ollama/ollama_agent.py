@@ -1,13 +1,15 @@
 import os
-from crewai import Agent, Task, Crew
+from crewai import Task, Crew, Process, Agent, LLM
 from langchain_openai import ChatOpenAI
 
-os.environ["OPENAI_API_KEY"] = "sk-proj-placeholder_key"
+os.environ["OPENAI_API_KEY"] = "sk-proj-1111"
 
-llm = ChatOpenAI(
-    model="phi3:3.8b",
-    base_url="http://localhost:11434/v1"
-)
+
+llm =LLM(model="ollama/phi3:3.8b")
+# llm = ChatOpenAI(
+#     model="phi3:3.8b",
+#     base_url="http://localhost:11434/v1"
+# )
 # llm2 = ChatOpenAI(
 #     model="phi3:3.14b",
 #     base_url="http://localhost:11434/v1"

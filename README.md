@@ -17,6 +17,11 @@ Download Ollama and phi3
 https://ollama.com/library/phi3
 
 ollama pull phi3:3.8b
+ollama list
+
+- here shoudl check the actual verison that is running
+
+run using python ollama_agent.py
 
 pip install crewai[tools]
 pip install python-decouple
